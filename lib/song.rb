@@ -44,6 +44,7 @@ class Song
 
   def self.new_from_filename(filename)
     file = filename.delete(".mp3").split(" - ")
+    file
   end
 
   def self.create_from_filename(filename)
