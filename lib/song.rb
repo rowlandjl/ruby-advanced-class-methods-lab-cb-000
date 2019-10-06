@@ -39,7 +39,7 @@ class Song
 
   def self.alphabetical
     songs = self.all.sort_by {|song| song.name}
-    song.uniq {|song| song.name}
+    song.uniq {|song| song}
   end
 
   def self.new_from_filename
